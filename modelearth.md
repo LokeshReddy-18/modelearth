@@ -1,6 +1,6 @@
 # ModelEarth
 
-A location-enabled install of [Anything LLM](https://anythingllm.com).
+A location-enabled install of [Anything LLM](https://anythingllm.com) which runs on [http://localhost:3001](http://localhost:3001).
 
 First start a virtual environment with Claude Code CLI in the modelearth folder.
 
@@ -23,7 +23,7 @@ Have Claude refresh our submodules. Here's an overview of [modelearth submodules
 
 
 ### Site Install
-<div style="float:right"><a href="#baremetal">Run without Claude</a></div>
+<div style="float:right"><a href="#tab=baremetal">Run without Claude</a></div>
 In Claude CLI run once:
 
 	server setup
