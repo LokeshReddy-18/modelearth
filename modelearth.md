@@ -10,10 +10,10 @@ MacOS
 	source env/bin/activate
 	npx @anthropic-ai/claude-code
 
-WindowsOS
+WindowsOS (You can also try without .bat added at end)
 
 	python -m venv env
-	env\Scripts\activate
+	env\Scripts\activate.bat
 	npx @anthropic-ai/claude-code
 
 
