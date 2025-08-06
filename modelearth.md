@@ -1,10 +1,9 @@
 # ModelEarth
 
-A location-enabled install of [Anything LLM](https://anythingllm.com) which runs on [http://localhost:3001](http://localhost:3001).
 
 [First fork the modelearth webroot](https://github.com/modelearth/modelearth/), clone your fork, then with the green button download via [Github desktop](https://github.com/apps/desktop).  
 
-Then start a virtual environment with [Claude Code CLI](https://www.anthropic.com/engineering/claude-code-best-practices) in your local modelearth folder by right-clicking it and pasting:
+Right-click your modelearth folder and start a virtual environment with [Claude Code CLI](https://www.anthropic.com/engineering/claude-code-best-practices) by running:
 
 MacOS
 
@@ -25,6 +24,9 @@ Have Claude refresh our submodules. Here's an overview of [modelearth submodules
 
 
 ### Site Install
+
+ModelEarth is a location-enabled install of [Anything LLM](https://anythingllm.com) which runs on [http://localhost:3001](http://localhost:3001).
+
 <div style="float:right"><a href="#tab=baremetal">Run without Claude</a></div>
 In Claude CLI run once:
 
