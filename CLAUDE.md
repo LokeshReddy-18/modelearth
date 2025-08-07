@@ -64,6 +64,7 @@ yarn prisma:reset            # Reset database and re-migrate
 | home | https://github.com/ModelEarth/home | Home page content |
 | cloud | https://github.com/ModelEarth/cloud | Cloud platform tools |
 | projects | https://github.com/ModelEarth/projects | Project showcases |
+| team | https://github.com/modelearth/team | Rust REST API for Azure |
 
 <br>
 
@@ -80,6 +81,7 @@ git submodule add https://github.com/ModelEarth/codechat codechat && \
 git submodule add https://github.com/ModelEarth/home home && \
 git submodule add https://github.com/ModelEarth/cloud cloud && \
 git submodule add https://github.com/ModelEarth/projects projects && \
+git submodule add https://github.com/modelearth/team team && \
 git submodule update --init --recursive && \
 git commit -m "Add submodules"
 ```
