@@ -51,7 +51,12 @@ Have Claude refresh our submodules hourly. Here's an overview of [modelearth sub
 	update submodules
 
 
-### 6. Anything LLM Activation
+### 6. Use Github Desktop with a submodule
+
+Click "File > Add Local Repository" and Choose the submodule folder in modelearth.
+This will allow you to see and commit changes.
+
+### 7. Anything LLM Activation (optional)
 
 ModelEarth is a location-enabled install of [Anything LLM](https://anythingllm.com) which runs on [http://localhost:3001](http://localhost:3001).
 
@@ -73,7 +78,7 @@ If small changes are needed, apply them using the Insert and Remove process with
 
 	reload claude.md, build, deploy
 
-### 6. Now choose a project that you'd like to contribute to
+### 8. Now choose a project that you'd like to contribute to
 
 Associate your Github to an existing issue or post a new issue describing the project.  
 Include a link to a Google Doc if you'd like others to help edit project specs.
