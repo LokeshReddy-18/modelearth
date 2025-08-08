@@ -46,15 +46,35 @@ WindowsOS (You can also try without .bat added at end)
 
 ### 5. Update submodules
 
-Have Claude refresh our submodules hourly. Here's an overview of [modelearth submodules](codechat/).
+Have Claude refresh our submodules hourly. Here's an overview of [modelearth submodules](codechat/).  
 
 	update submodules
 
+You can also update submodules without Claude:
 
-### 6. Use Github Desktop with a submodule
+	cd localsite && git pull https://github.com/modelearth/localsite && cd ../
+	cd home && git pull https://github.com/modelearth/home && cd ../
+	cd team && git pull https://github.com/modelearth/team && cd ../
+	cd projects && git pull https://github.com/modelearth/projects && cd ../
+	cd comparison && git pull https://github.com/modelearth/comparison && cd ../
+	cd realitystream && git pull https://github.com/modelearth/realitystream && cd ../
+	cd cloud && git pull https://github.com/modelearth/cloud && cd ../
+	cd feed && git pull https://github.com/modelearth/feed && cd ../
+	cd swiper && git pull https://github.com/modelearth/swiper && cd ../
+	cd codechat && git pull https://github.com/modelearth/codechat && cd ../
+
+### 6. Use Github Desktop with a submodule or an independent repo
 
 Click "File > Add Local Repository" and choose a submodule folder within your local modelearth repo.
 This will allow you to see and commit changes.
+
+Every submodule can also be an independent repo residing as a subfolder within your modelearth webroot. You can fork and clone other repos from modelearth and place them in your modelearth folder (webroot) to make updates.
+
+If you're working on python and data-pipelines, use the [MaterialScience](https://model.earth/MaterialScience/) repo as your webroot. View [overview of webroots](codechat).
+
+Using Claude, you can commit a submodule using:
+
+	commit [submodule folder name]
 
 ### 7. Anything LLM Activation (optional)
 
