@@ -113,9 +113,9 @@ When displaying "Issue Resolved" use the same checkbox icon as "Successfully Upd
 
 ### Quick Commands
 
-When you type "restart", run this single command to restart the server in seconds:
+When you type "restart", ALWAYS run this single command to restart the server in seconds:
 ```bash
-cd $(git rev-parse --show-toplevel) && pkill -f "node.*index.js"; (cd server && NODE_ENV=production nohup node index.js > /dev/null 2>&1 &)
+cd $(git rev-parse --show-toplevel) && pkill -f "node.*index.js" && lsof -ti:3001 | xargs -r kill -9; (cd server && NODE_ENV=production nohup node index.js > /dev/null 2>&1 &)
 ```
 
 When you type "quick", add the following permissions block to setting.local.json under allow. "

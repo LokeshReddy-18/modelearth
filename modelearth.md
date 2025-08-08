@@ -83,6 +83,8 @@ ModelEarth is a location-enabled install of [Anything LLM](https://anythingllm.c
 <div style="float:right"><a href="#tab=baremetal">Run without Claude</a></div>
 In Claude CLI run once. This runs [setup.md](https://github.com/ModelEarth/modelearth/blob/master/setup.md).
 
+Skip this step if you've run previously. You'll already have Prisma and the database installed.
+
 	server setup
 
 Restart the server quickly, in a couple seconds:
