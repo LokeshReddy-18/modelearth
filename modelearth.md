@@ -53,7 +53,7 @@ Have Claude refresh our submodules hourly. Here's an overview of [modelearth sub
 
 ### 6. Use Github Desktop with a submodule
 
-Click "File > Add Local Repository" and Choose the submodule folder in modelearth.
+Click "File > Add Local Repository" and choose a submodule folder within your local modelearth repo.
 This will allow you to see and commit changes.
 
 ### 7. Anything LLM Activation (optional)
