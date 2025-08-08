@@ -1,9 +1,29 @@
-# ModelEarth
+## ModelEarth workflow
 
-
-[First fork the modelearth webroot](https://github.com/modelearth/modelearth/), clone your fork, then with the green button download via [Github desktop](https://github.com/apps/desktop).  
+### 1. [First fork the modelearth webroot with Anything LLM](https://github.com/modelearth/modelearth/)
+Then clone your fork, turn on GitHub Pages for review, and with the green button download via [Github Desktop](https://github.com/apps/desktop).  
 
 Right-click your modelearth folder and start a virtual environment with [Claude Code CLI](https://www.anthropic.com/engineering/claude-code-best-practices) by running:
+
+### 2. Start a server on port 3001 in the modelearth webroot
+
+MacOS
+
+	python3 -m venv env
+	source env/bin/activate
+	python -m http.server 3001
+
+WindowsOS
+
+	python -m venv env
+	env\Scripts\activate.bat
+	python -m http.server 3001
+
+### 3. View site overview
+
+Visit [http://localhost:3001](http://localhost:3001/) and [http://localhost:3001/codechat](http://localhost:3001/codechat)
+
+### 4. Launch a Claude Code CLI
 
 MacOS
 
@@ -23,12 +43,12 @@ Have Claude refresh our submodules. Here's an overview of [modelearth submodules
 	Update submodules
 
 
-### Site Install
+### 5. Anything LLM Activation
 
 ModelEarth is a location-enabled install of [Anything LLM](https://anythingllm.com) which runs on [http://localhost:3001](http://localhost:3001).
 
 <div style="float:right"><a href="#tab=baremetal">Run without Claude</a></div>
-In Claude CLI run once:
+In Claude CLI run once. This runs [setup.md](https://github.com/ModelEarth/modelearth/blob/master/setup.md).
 
 	server setup
 
@@ -44,4 +64,10 @@ We're aiming to avoid making changes in the Anything-llm parent repo code. [We r
 If small changes are needed, apply them using the Insert and Remove process within claude.md, then run:
 
 	reload claude.md, build, deploy
+
+### 6. Now choose a project that you'd like to contribute to
+
+Associate your Github to an existing issue or post a new issue describing the project. You can include a link to a Google Doc if you'd like others to help edit project specs.
+
+[http://localhost:3001/projects](http://localhost:3001/projects) 
 

@@ -134,6 +134,14 @@ When displaying "Issue Resolved" use the same checkbox icon as "Successfully Upd
 - Allow up to 12 minutes to pull repos (large repositories)
 - Always verify both submodule AND parent repository are updated
 
+### Security Guidelines
+- **NEVER expose, copy, or reuse API keys, secrets, or credentials from any source**
+- **NEVER commit API keys, tokens, or sensitive configuration to repositories**
+- **ALWAYS use environment variables for sensitive configuration**
+- **NEVER reference or copy credentials from other repositories, submodules, or external sources**
+- API keys must be obtained legitimately by the user and configured in their local environment
+- If configuration requires API keys, instruct the user to obtain their own keys from the official provider
+
 ### Git Commit Guidelines
 - **NEVER add Claude Code attribution or co-authored-by lines to commits**
 - **NEVER add "🤖 Generated with [Claude Code]" or similar footers**

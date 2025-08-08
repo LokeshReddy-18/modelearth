@@ -16,4 +16,5 @@ We then revert briefly to sync with updates in the anything-llm parent repo:
 	# To finish, run "Example update script" from "Bare Metal" tab above.
 
 
-Long-term plan: Changes should reside in settings, with PRs sent to the parent repo. Using a separate modelearth.settings.json file is one possibility.
+Long-term plan: Changes should reside in settings, with PRs sent to the parent repo.  
+Using a separate modelearth.settings.json file is one possibility.
