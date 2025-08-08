@@ -21,7 +21,7 @@ WindowsOS
 
 ### 3. View site overview
 
-Visit [http://localhost:3001](http://localhost:3001/) and [http://localhost:3001/codechat](http://localhost:3001/codechat)
+Visit [http://localhost:3001](http://localhost:3001) and [http://localhost:3001/codechat](http://localhost:3001/codechat/)
 
 ### 4. Launch Claude Code CLI
 
@@ -70,7 +70,7 @@ This will allow you to see and commit changes.
 
 Every submodule can also be an independent repo residing as a subfolder within your modelearth webroot. You can fork and clone other repos from modelearth and place them in your modelearth folder (webroot) to make updates.
 
-If you're working on python and data-pipelines, use the [MaterialScience](https://model.earth/MaterialScience/) repo as your webroot. View [overview of webroots](codechat).
+If you're working on python and data-pipelines, use the [MaterialScience](https://model.earth/MaterialScience/) repo as your webroot. View [overview of webroots](codechat/).
 
 Using Claude, you can commit a submodule using:
 
@@ -103,5 +103,5 @@ If small changes are needed, apply them using the Insert and Remove process with
 Associate your Github to an existing issue or post a new issue describing the project.  
 Include a link to a Google Doc if you'd like others to help edit project specs.
 
-[http://localhost:3001/projects](http://localhost:3001/projects) 
+[http://localhost:3001/projects](http://localhost:3001/projects/) 
 
