@@ -48,7 +48,7 @@ WindowsOS (You can also try without .bat added at end)
 
 Have Claude refresh our submodules hourly. Here's an overview of [modelearth submodules](codechat/).
 
-	Update submodules
+	update submodules
 
 
 ### 6. Anything LLM Activation
@@ -75,7 +75,8 @@ If small changes are needed, apply them using the Insert and Remove process with
 
 ### 6. Now choose a project that you'd like to contribute to
 
-Associate your Github to an existing issue or post a new issue describing the project. You can include a link to a Google Doc if you'd like others to help edit project specs.
+Associate your Github to an existing issue or post a new issue describing the project.  
+Include a link to a Google Doc if you'd like others to help edit project specs.
 
 [http://localhost:3001/projects](http://localhost:3001/projects) 
 
