@@ -1,7 +1,10 @@
 /**
+ * This file is invoked by 6 lines of code within claude.md inserted into server/index.js 
+ * by Claude with "code insert" and "code toggle"
+ *
  * Submodule Static Server Configuration
- * This file dynamically serves submodule directories as static content
- * Lines are inserted into server/index.js file by Claude with "code insert" and "code toggle"
+ * This file dynamically serves submodules and root pages directories as static content
+ * using virtual paths via Express static middleware. Root pages include modelearth.md
  */
 
 const path = require('path');
@@ -33,6 +36,20 @@ function addSubmoduleStatic(app) {
       console.log(`[Submodules] Serving /${submodule} from ${submodulePath}`);
     } else {
       console.log(`[Submodules] Warning: ${submodule} directory not found`);
+    }
+  });
+
+  // Serve several root files via virtual paths
+  const rootFiles = ['modelearth.md', 'index.html', 'README.md', 'BARE_METAL.md'];
+  rootFiles.forEach(filename => {
+    const filePath = path.resolve(__dirname, filename);
+    if (fs.existsSync(filePath)) {
+      app.get(`/${filename}`, (req, res) => {
+        res.sendFile(filePath);
+      });
+      console.log(`[Submodules] Serving /${filename} from ${filePath}`);
+    } else {
+      console.log(`[Submodules] Warning: ${filename} not found in root directory`);
     }
   });
 }

@@ -161,9 +161,29 @@ Insert between the express.static middleware and the root route handler:
   } catch (e) {
     console.log('Submodules not configured - continue normally. Error:', e.message);
   }
+
+  // Move AnythingLLM interface to /chat
+  app.use("/chat", function (_, response) {
+    IndexPage.generate(response);
+    return;
+  });
 ```
 
 **Target location**: After `});` that closes `express.static()` and before `app.use("/", function (_, response) {`
+
+**Note**: After adding the `/chat` route above, change the existing root route to serve your index.html:
+
+```javascript
+  app.use("/", function (req, response) {
+    const rootIndexPath = path.resolve(__dirname, '../index.html');
+    if (require('fs').existsSync(rootIndexPath)) {
+      response.sendFile(rootIndexPath);
+    } else {
+      IndexPage.generate(response);
+    }
+    return;
+  });
+```
 
 #### .gitignore
 Add to the end of the file (avoiding duplicates):
