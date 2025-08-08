@@ -23,7 +23,13 @@ WindowsOS
 
 Visit [http://localhost:3001](http://localhost:3001/) and [http://localhost:3001/codechat](http://localhost:3001/codechat)
 
-### 4. Launch a Claude Code CLI
+### 4. Launch Claude Code CLI
+
+Right-click and start a fresh terminal in the modelearth folder.  
+You'll need [NodeJS 18+](https://nodejs.org/en/download). Type `node -v` to check.
+
+If you haven't installed Claude yet, the following will direct you to the Claude website. 
+Register for a $20/month subscription.
 
 MacOS
 
@@ -38,12 +44,14 @@ WindowsOS (You can also try without .bat added at end)
 	npx @anthropic-ai/claude-code
 
 
-Have Claude refresh our submodules. Here's an overview of [modelearth submodules](codechat/).
+### 5. Update submodules
+
+Have Claude refresh our submodules hourly. Here's an overview of [modelearth submodules](codechat/).
 
 	Update submodules
 
 
-### 5. Anything LLM Activation
+### 6. Anything LLM Activation
 
 ModelEarth is a location-enabled install of [Anything LLM](https://anythingllm.com) which runs on [http://localhost:3001](http://localhost:3001).
 
