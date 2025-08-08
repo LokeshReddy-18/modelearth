@@ -14,43 +14,6 @@ AnythingLLM (with ModelEarth submodules) is a full-stack AI application that ena
 
 Run "server setup" to invoke the steps in the setup.md file.
 
-## Development Commands
-
-### Setup
-```bash
-yarn setup                   # Install dependencies and copy .env files
-yarn setup:envs              # Copy environment file templates
-yarn prisma:setup            # Setup database (generate, migrate, seed)
-```
-
-### Development (run in separate terminals)
-```bash
-yarn dev:server              # Start server in development mode
-yarn dev:frontend            # Start frontend in development mode  
-yarn dev:collector           # Start collector in development mode
-yarn dev:all                 # Start all services concurrently
-```
-
-### Testing & Linting
-```bash
-yarn test                    # Run Jest tests
-yarn lint                    # Lint all components (server, frontend, collector)
-```
-
-### Production
-```bash
-yarn prod:frontend           # Build frontend for production
-yarn prod:server             # Start server in production mode
-```
-
-### Database Management
-```bash
-yarn prisma:generate         # Generate Prisma client
-yarn prisma:migrate          # Run database migrations
-yarn prisma:seed             # Seed database with initial data
-yarn prisma:reset            # Reset database and re-migrate
-```
-
 ### Submodule Repositories
 
 | Name | Repository | Description |
@@ -278,3 +241,44 @@ Add before `</head>` closing tag in the HTML template:
 - Always omit the lines about clude in Git commits
 - After commiting changes in a submodule, climb out of it into the root
 - Always push change to the upstream repository, or submit a Pull Request to the upstream repository if the user does not have access to make a push
+
+
+## Development Commands
+
+For Anything LLM site processes
+
+### Setup
+```bash
+yarn setup                   # Install dependencies and copy .env files
+yarn setup:envs              # Copy environment file templates
+yarn prisma:setup            # Setup database (generate, migrate, seed)
+```
+
+### Development (run in separate terminals)
+```bash
+yarn dev:server              # Start server in development mode
+yarn dev:frontend            # Start frontend in development mode  
+yarn dev:collector           # Start collector in development mode
+yarn dev:all                 # Start all services concurrently
+```
+
+### Testing & Linting
+```bash
+yarn test                    # Run Jest tests
+yarn lint                    # Lint all components (server, frontend, collector)
+```
+
+### Production
+```bash
+yarn prod:frontend           # Build frontend for production
+yarn prod:server             # Start server in production mode
+```
+
+### Database Management
+```bash
+yarn prisma:generate         # Generate Prisma client
+yarn prisma:migrate          # Run database migrations
+yarn prisma:seed             # Seed database with initial data
+yarn prisma:reset            # Reset database and re-migrate
+```
+
